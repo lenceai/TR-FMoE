@@ -1,0 +1,42 @@
+{
+  "os": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.11",
+  "startedAt": "2025-06-05T01:10:24.794967Z",
+  "program": "/home/lence/TR-FMoE/tr_fmoe_mvp.py",
+  "codePath": "tr_fmoe_mvp.py",
+  "git": {
+    "remote": "git@github.com:lenceai/TR-FMoE.git",
+    "commit": "aa84fd4a9320c1fd4a4ca83f9ecce7f628c609bb"
+  },
+  "email": "ikdataml@gmail.com",
+  "root": "/home/lence/TR-FMoE",
+  "host": "WHITEDWARF",
+  "executable": "/home/lence/miniconda3/envs/tr-fmoe/bin/python",
+  "codePathLocal": "tr_fmoe_mvp.py",
+  "cpu_count": 16,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1081101176832",
+      "used": "81183391744"
+    }
+  },
+  "memory": {
+    "total": "84378677248"
+  },
+  "cpu": {
+    "count": 16,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4080 Laptop GPU",
+      "memoryTotal": "12878610432",
+      "architecture": "Ada",
+      "uuid": "GPU-9a4d89c4-71af-f5ae-a069-472501135a70"
+    }
+  ],
+  "cudaVersion": "12.7"
+}

@@ -1,0 +1,36 @@
+# TR-FMoE Configuration
+model:
+  vocab_size: 32000
+  dim: 768
+  num_layers: 12
+  num_heads: 12
+  num_experts: 8
+  max_seq_len: 1024
+  hidden_dim: 3072
+
+training:
+  batch_size: 8
+  learning_rate: 1e-4
+  weight_decay: 0.01
+  warmup_steps: 1000
+  max_grad_norm: 1.0
+  num_epochs: 5
+  eval_steps: 500
+  save_steps: 1000
+
+data:
+  fineweb_samples: 10000
+  pdf_dir: "./pdfs"
+  max_seq_len: 1024
+  train_test_split: 0.9
+
+distributed:
+  backend: "nccl"
+  master_addr: "localhost"
+  master_port: "12355"
+  world_size: 3
+  
+logging:
+  wandb_project: "tr-fmoe-mvp"
+  checkpoint_dir: "./checkpoints"
+  log_level: "INFO" 
